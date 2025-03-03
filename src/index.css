@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global typography and dark mode */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-neutral-900 dark:bg-black dark:text-neutral-100;
+  font-family: 'Inter', sans-serif;
+}
