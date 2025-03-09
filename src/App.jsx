@@ -6,6 +6,7 @@ import { useEffect } from "react";
 // Pages
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ export default function App() {
         />
       </Helmet>
 
+      <Navbar />
       <ScrollToTop />
 
       <AnimatePresence mode="wait">
