@@ -1,0 +1,52 @@
+[
+  {
+    "id": "a01",
+    "title": "Fragmented Horizon",
+    "artist": "Sophie Lin",
+    "category": "Abstract",
+    "type": "Image",
+    "style": "Minimal",
+    "image": "/assets/artworks/fragmented-horizon.png",
+    "description": "A soft interplay of light and void, evoking spatial tension."
+  },
+  {
+    "id": "a02",
+    "title": "Echoes of Neon",
+    "artist": "Jasper Lee",
+    "category": "Urban",
+    "type": "3D",
+    "style": "Cyberpunk",
+    "image": "/assets/artworks/echoes-neon.png",
+    "description": "Night reflections in a simulated city, rendered with volumetric haze."
+  },
+  {
+    "id": "a03",
+    "title": "Lucid Bloom",
+    "artist": "Aria Kane",
+    "category": "Nature",
+    "type": "Image",
+    "style": "Surreal",
+    "image": "/assets/artworks/lucid-bloom.png",
+    "description": "Floral explosion born from machine-learned dreams."
+  },
+  {
+    "id": "a04",
+    "title": "Recursive Self",
+    "artist": "Kai Noma",
+    "category": "Conceptual",
+    "type": "Animation",
+    "style": "Experimental",
+    "image": "/assets/artworks/recursive-self.gif",
+    "description": "A looped visual meditation on identity and repetition."
+  },
+  {
+    "id": "a05",
+    "title": "Void Runner",
+    "artist": "Nova Estrella",
+    "category": "Sci-Fi",
+    "type": "3D",
+    "style": "Geometric",
+    "image": "/assets/artworks/void-runner.png",
+    "description": "A hyperspace rider escaping simulated collapse."
+  }
+]
