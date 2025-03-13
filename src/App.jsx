@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
+import Gallery from "./pages/Gallery";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ export default function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
+          <Route path="/galeria" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
