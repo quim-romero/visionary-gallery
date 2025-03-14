@@ -5,7 +5,7 @@ export default function Navbar() {
   const links = [
     { to: "/", label: "Home" },
     { to: "/galeria", label: "Gallery" },
-    { to: "/favoritos", label: "Favorites" },
+    { to: "/favorites", label: "Favorites" },
     { to: "/acerca", label: "About" },
     { to: "/contacto", label: "Contact" },
   ];

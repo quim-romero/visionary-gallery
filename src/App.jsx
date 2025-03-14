@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Gallery from "./pages/Gallery";
+import Favorites from "./pages/Favorites";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -37,6 +38,7 @@ export default function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/galeria" element={<Gallery />} />
+          <Route path="/favorites" element={<Favorites />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
