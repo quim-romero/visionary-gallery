@@ -4,15 +4,20 @@ import { motion } from "framer-motion";
 import artworks from "../data/artworks.json";
 import GalleryCard from "../components/GalleryCard";
 import FiltersBar from "../components/FiltersBar";
+import LightboxModal from "../components/LightboxModal";
 
 export default function Gallery() {
   const [data, setData] = useState([]);
   const [filtered, setFiltered] = useState([]);
+  const [selected, setSelected] = useState(null);
 
   useEffect(() => {
     setData(artworks);
     setFiltered(artworks);
   }, []);
+
+  const handleOpen = (art) => setSelected(art);
+  const handleClose = () => setSelected(null);
 
   return (
     <>
@@ -35,10 +40,14 @@ export default function Gallery() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {filtered.map((art) => (
-            <GalleryCard key={art.id} artwork={art} />
+            <div key={art.id} onClick={() => handleOpen(art)}>
+              <GalleryCard artwork={art} />
+            </div>
           ))}
         </div>
       </motion.main>
+
+      <LightboxModal artwork={selected} onClose={handleClose} />
     </>
   );
 }
