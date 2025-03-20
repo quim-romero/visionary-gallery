@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const links = [
     { to: "/", label: "Home" },
-    { to: "/galeria", label: "Gallery" },
+    { to: "/gallery", label: "Gallery" },
     { to: "/favorites", label: "Favorites" },
-    { to: "/acerca", label: "About" },
-    { to: "/contacto", label: "Contact" },
+    { to: "/about", label: "About" },
+    { to: "/contact", label: "Contact" },
   ];
 
   return (
@@ -43,7 +44,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="md:hidden">
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
         </div>
       </nav>
     </motion.header>

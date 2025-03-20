@@ -1,22 +1,16 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet";
-import { useEffect } from "react";
+
+// Layout
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Pages
 import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
 import Gallery from "./pages/Gallery";
 import Favorites from "./pages/Favorites";
-
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [pathname]);
-  return null;
-};
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   const location = useLocation();
@@ -24,10 +18,10 @@ export default function App() {
   return (
     <>
       <Helmet>
-        <title>Visionary Gallery – Digital Art Store</title>
+        <title>Visionary Gallery</title>
         <meta
           name="description"
-          content="Discover unique digital artworks. Curated collections. Clean experience."
+          content="A curated digital art store and exhibition platform."
         />
       </Helmet>
 
@@ -37,7 +31,7 @@ export default function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
-          <Route path="/galeria" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
