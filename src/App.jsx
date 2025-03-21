@@ -10,6 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import Favorites from "./pages/Favorites";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
