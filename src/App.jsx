@@ -12,6 +12,7 @@ import Gallery from "./pages/Gallery";
 import Favorites from "./pages/Favorites";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </>
   );
 }
