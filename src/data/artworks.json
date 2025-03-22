@@ -30,14 +30,14 @@
     "description": "Floral explosion born from machine-learned dreams."
   },
   {
-    "id": "a04",
-    "title": "Recursive Self",
-    "artist": "Kai Noma",
-    "category": "Conceptual",
-    "type": "Animation",
-    "style": "Experimental",
-    "image": "/public/assets/artworks/recursive-self.gif",
-    "description": "A looped visual meditation on identity and repetition."
+  "id": "a04",
+  "title": "City Signals",
+  "artist": "Kai Noma",
+  "category": "Urban",
+  "type": "Animation",
+  "style": "Noir",
+  "image": "/assets/artworks/city-signals.gif",
+  "description": "An abstract nightscape exploring the rhythm of artificial light across a digital skyline."
   },
   {
     "id": "a05",
@@ -48,5 +48,15 @@
     "style": "Geometric",
     "image": "/public/assets/artworks/void-runner.png",
     "description": "A hyperspace rider escaping simulated collapse."
+  },
+  {
+  "id": "a06",
+  "title": "Chromatic Memory",
+  "artist": "Aria Kane",
+  "category": "Abstract",
+  "type": "Animation",
+  "style": "Glitch",
+  "image": "/assets/artworks/chromatic-memory.gif",
+  "description": "A looping glitch of fading memories encoded in chromatic pulses."
   }
 ]
