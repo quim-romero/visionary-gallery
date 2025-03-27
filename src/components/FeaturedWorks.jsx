@@ -1,9 +1,19 @@
+import { useMemo } from "react";
 import artworks from "../data/artworks.json";
 import GalleryCard from "./GalleryCard";
 import { motion } from "framer-motion";
 
+function getRandomArtworks(data, count) {
+  const shuffled = [...data];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, count);
+}
+
 export default function FeaturedWorks() {
-  const featured = artworks.slice(0, 3); // Puedes ajustar cantidad
+  const featured = useMemo(() => getRandomArtworks(artworks, 3), []);
 
   return (
     <section className="px-4 py-16 max-w-7xl mx-auto">

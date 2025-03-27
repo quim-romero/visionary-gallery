@@ -60,14 +60,14 @@
     "description": "A looping glitch of fading memories encoded in chromatic pulses."
   },
   {
-    "id": "a07",
-    "title": "Digital Bloom",
-    "artist": "Lea Xu",
-    "category": "Fantasy",
-    "type": "Image",
-    "style": "Hyperreal",
-    "image": "/assets/artworks/digital-bloom.png",
-    "description": "An ultra-detailed rendering of a flower blooming in a simulated Eden."
+  "id": "a07",
+  "title": "Orbital Mirage",
+  "artist": "Lea Xu",
+  "category": "Sci-Fi",
+  "type": "Image",
+  "style": "Atmospheric",
+  "image": "/assets/artworks/orbital-mirage.png",
+  "description": "A surreal planetary reflection suspended above a synthetic ocean under shifting stars."
   },
   {
     "id": "a08",
