@@ -34,6 +34,39 @@ export default function About() {
           This is a fictional project designed for portfolio demonstration
           purposes. All artwork, names and visuals are mock data.
         </p>
+
+        {/* Testimonials */}
+        <section className="mt-20 space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <blockquote className="text-xl italic text-neutral-600 dark:text-neutral-400 text-center max-w-2xl mx-auto">
+              “Visionary redefined how I present my digital works. It feels like
+              exhibiting in a living, breathing gallery.”
+            </blockquote>
+            <p className="text-sm text-neutral-500 dark:text-neutral-500 text-center mt-2">
+              — Nova Estrella, Digital Artist
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            viewport={{ once: true }}
+          >
+            <blockquote className="text-xl italic text-neutral-600 dark:text-neutral-400 text-center max-w-2xl mx-auto">
+              “It’s more than a portfolio—it’s a space for intention and
+              atmosphere.”
+            </blockquote>
+            <p className="text-sm text-neutral-500 dark:text-neutral-500 text-center mt-2">
+              — Kai Noma, Conceptual Designer
+            </p>
+          </motion.div>
+        </section>
       </motion.main>
     </>
   );
